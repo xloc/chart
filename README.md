@@ -1,20 +1,23 @@
-# React project template
+# Chart
 
-* vite, react-ts
-* tailwindcss
-* classnames, lodash
+I want to render charts based on structured text
 
+charts includes:
+- flow chart
+- knowledge graph
 
-## Create a project using this template
-```
-npx degit xloc/vite-react-template#main {project_name}
-```
+structured text:
+- yaml
 
+## Existing tools
 
-## Start the dev server
-```
-yarn dev --host
-````
-
-## To change
-* `yarn add @types/lodash`
+There are existing tools but they all have their limitations:
+- diagrams.net
+  - ✅ online diagram edit tool
+  - ✅ nice interactive editing
+  - ❗️ but, all nodes must be add manually. what if it is generated using text
+- Mermaid
+  - ✅ text based chart generation
+  - ✅ write code to draw chart
+  - ❗️ but, no interactive edit. adding new connection, moving nodes are difficult
+  - ❗️ auto-layout is the only option
